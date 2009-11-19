@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+PROJECT( HelloCMake )
+
+SET( CMAKE_BUILD_TYPE Debug )
+
+INCLUDE( FindPkgConfig )
+
+SET( TESTCMAKE_SRC hellocmake )
+
+ADD_EXECUTABLE( hellocmake ${TESTCMAKE_SRC} )
