@@ -1,3 +1,13 @@
+CMAKE_MINIMUM_REQUIRED( VERSION 2.6 )
+
 SET (CMAKE_BUILD_TYPE Debug)
+
+INCLUDE_DIRECTORIES( ${CMAKE_SOURCE_DIR}/include )
+
+ADD_SUBDIRECTORY( src )
+
 SET (hello hello)
+
 ADD_EXECUTABLE(hello ${hello})
+
+TARGET_LINK_LIBRARIES( hello shapes object )
